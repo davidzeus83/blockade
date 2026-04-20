@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockade – Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 8px;
+    }
+    .icon {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #111;
+    }
+    .app-name {
+      background: linear-gradient(135deg, #E63946, #457B9D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 36px;
+      margin-top: 4px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      color: #222;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 6px;
+    }
+    p { margin-bottom: 14px; color: #333; }
+    .faq { margin-bottom: 0; }
+    .faq-item {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 14px 18px;
+      font-weight: 600;
+      color: #222;
+      background: #fafafa;
+      cursor: default;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .faq-q::before {
+      content: "Q";
+      background: linear-gradient(135deg, #E63946, #457B9D);
+      color: white;
+      border-radius: 4px;
+      width: 22px; height: 22px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .faq-a {
+      padding: 12px 18px;
+      color: #444;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-top: 36px;
+      color: #e8e8f0;
+    }
+    .contact-box h2 {
+      color: #fff;
+      border-bottom-color: rgba(255,255,255,0.15);
+      margin-top: 0;
+    }
+    .contact-box p { color: #aab8cc; }
+    .contact-box a {
+      color: #6fa3d8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+    .tip {
+      background: #f0f7ff;
+      border-left: 4px solid #457B9D;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      color: #1a3a5a;
+    }
+    .tip strong { color: #1a3a8a; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 28px 18px; }
+      h1 { font-size: 1.5rem; }
+      .icon { width: 48px; height: 48px; font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="icon">♟</div>
+    <div>
+      <h1><span class="app-name">Blockade</span></h1>
+    </div>
+  </div>
+  <p class="tagline">Strategic blocking board game · Support &amp; Help</p>
+
+  <!-- HOW TO PLAY -->
+  <h2>How to Play</h2>
+  <p>Blockade is a board game for one player against the AI. The goal is to bring all your pieces home before the AI does.</p>
+  <ul style="margin: 0 0 14px 20px; color: #333;">
+    <li style="margin-bottom:6px">Roll the dice and move one of your pieces the rolled number of fields</li>
+    <li style="margin-bottom:6px">You can pull a piece out of your home base on any roll – the first field counts as step 1</li>
+    <li style="margin-bottom:6px">If a piece cannot move because all destinations are occupied, you are <strong>blocked</strong> – and lose 1 life</li>
+    <li style="margin-bottom:6px">Bring all 4 pieces of a single color into the goal lane to earn <strong>+2 bonus lives</strong></li>
+    <li style="margin-bottom:6px">Reach 0 lives and you lose immediately</li>
+    <li style="margin-bottom:6px">If the optional "Roll again on a 6" rule is active: roll a 6, make your move, and roll again</li>
+  </ul>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+
+    <div class="faq-item">
+      <div class="faq-q">The app won't open / crashes on startup</div>
+      <div class="faq-a">Try closing the app completely and reopening it. If the issue persists, restart your device. Make sure your operating system is up to date. If the problem continues, please contact us with your device model and OS version.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">There is no sound</div>
+      <div class="faq-a">Check that your device is not on silent mode. On iPhone, make sure the physical ring/silent switch on the side is not set to silent (no orange showing). Also check that the volume is turned up. Inside the app, tap the speaker icon in the top bar to make sure sound is enabled.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">The game doesn't end even though all pieces are in the goal</div>
+      <div class="faq-a">The game ends when all 8 pieces of one player (both colors combined) have reached the goal lane. Make sure all pieces of both your colors are inside the colored goal lane – not just near it. Pieces only count once they have entered the goal lane from the track.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">I can't select a piece to move</div>
+      <div class="faq-a">You can only select pieces that have a valid move. If all your pieces are blocked by other pieces on the destination fields, no move is possible and the turn passes automatically. Try rolling and looking for the dashed highlight circle – it shows which pieces can be moved.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the Strait of Hormuz mode?</div>
+      <div class="faq-a">Strait of Hormuz is a thematic variant of the classic game. The rules are identical, but the visual design is inspired by the geopolitical strait between Iran and Oman. You choose to play as USA (south) or Iran (north). The pieces and board colors change accordingly.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What does "Roll again on a 6" mean?</div>
+      <div class="faq-a">When this optional rule is enabled (checkbox on the start screen), rolling a 6 and successfully moving a piece earns you an extra turn. If you roll a 6 but cannot move any piece (all are blocked), the bonus turn is forfeited.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do lives work?</div>
+      <div class="faq-a">Each player starts with 3 lives. Every time a player cannot make any move (fully blocked), they lose 1 life. If all pieces of one color reach the goal lane, the owning player gains +2 lives as a bonus. If a player reaches 0 lives, they lose immediately regardless of piece positions.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Does the app require an internet connection?</div>
+      <div class="faq-a">No. Blockade is fully offline. No account, no internet, no data collection. You can play anywhere, anytime.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I delete my data?</div>
+      <div class="faq-a">The app stores no personal data anywhere. All game state is kept locally on your device. To remove all data, simply delete the app from your device.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is the app free?</div>
+      <div class="faq-a">Yes, Blockade is completely free to download and play. There are no in-app purchases, no subscriptions, and no ads.</div>
+    </div>
+
+  </div>
+
+  <!-- TIPS -->
+  <h2>Tips &amp; Strategy</h2>
+  <div class="tip"><strong>Protect your lives.</strong> Being blocked costs a life. Try to keep at least one piece that can always move so you're never fully stuck.</div>
+  <div class="tip"><strong>Complete colors early.</strong> Finishing all 4 pieces of one color gives you +2 lives – a huge advantage. Prioritize completing one color before spreading across both.</div>
+  <div class="tip"><strong>Use the goal lane as a shield.</strong> Pieces in the goal lane are safe from blocking, but can also block your own other pieces – plan your entry order carefully.</div>
+  <div class="tip"><strong>Block the AI strategically.</strong> If you can land a piece on a field that the AI needs, you force them to lose a life. Watch the AI's pieces and cut off their path.</div>
+  <div class="tip"><strong>Don't rush all pieces out at once.</strong> Having many pieces on the board at the same time increases the chance of being blocked. A focused approach with 1-2 active pieces per color is often safer.</div>
+
+  <!-- CONTACT -->
+  <div class="contact-box">
+    <h2>Contact Support</h2>
+    <p>Couldn't find an answer? We're happy to help. Send us an email and we'll get back to you as soon as possible.</p>
+    <br>
+    <p><strong style="color:#fff">Email:</strong> <a href="mailto:[deine@email.com]">[deine@email.com]</a></p>
+    <p><strong style="color:#fff">App:</strong> Blockade</p>
+    <p><strong style="color:#fff">Developer:</strong> [Dein Name]</p>
+    <br>
+    <p style="font-size:0.85rem">When reporting a bug, please include your device model (e.g. iPhone 16 Pro) and iOS/Android version. This helps us reproduce and fix issues faster.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Blockade · <a href="privacy.html" style="color:#aaa">Privacy Policy</a>
+</footer>
+</body>
+</html>
